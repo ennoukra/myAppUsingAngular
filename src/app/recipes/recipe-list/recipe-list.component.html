@@ -1,1 +1,28 @@
-<app-recipe-item></app-recipe-item>
+<div class="row">
+  <div class="col-xs-12">
+    <button class="btn btn-success">New Recipe</button>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <a href="#" class="list-group-item clearfix">
+        <div class="pull-left">
+          <h4 class="list-group-item-heading">{{ Recipes[0].name }}</h4>
+          <p>
+            <span class="list-group-item-list">{{
+              Recipes[0].description
+            }}</span>
+          </p>
+        </div>
+        <span class="pull-right">
+          <img
+            src="{{ Recipes[0].imagePath }}"
+            alt=""
+            class="img-responsive"
+            style="max-height: 50px"
+          />
+        </span>
+      </a>
+      <app-recipe-item></app-recipe-item>
+    </div>
+  </div>
+</div>
